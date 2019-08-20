@@ -18,7 +18,7 @@
                        "AWS/EC2",
                        "CPUUtilization",
                        "InstanceId",
-                       "<YOUR_INSTANCE_ID>"
+                       "i-063a0b76d59f45bef"
                     ]
                  ],
                  "stat": "Average",
@@ -48,7 +48,7 @@
                        "AWS/EC2",
                        "CPUUtilization",
                        "InstanceId",
-                       "<YOUR_INSTANCE_ID>"
+                       "i-063a0b76d59f45bef"
                     ]
                  ],
                  "stat": "Average",
@@ -60,8 +60,7 @@
                  },
                  "period": 60,
                  "title": "CPUUtilization: Instance b: Acct A"      
-        },
-        "accountId": <OPTIONAL_ACCOUNT_ID>
+        }
     }
     </script>
 
@@ -79,7 +78,7 @@
                        "AWS/EC2",
                        "CPUUtilization",
                        "InstanceId",
-                       "<YOUR_INSTANCE_ID>"
+                       "i-063a0b76d59f45bef"
                     ]
                  ],
                  "stat": "Average",
@@ -91,8 +90,7 @@
                  },
                  "period": 60,
                  "title": "CPUUtilization: Instance c: Acct B"    
-        },
-        "accountId": <OPTIONAL_ACCOUNT_ID>
+        }
     }
     </script>
 
@@ -108,10 +106,11 @@
             js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
             js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
         }(window, document, 'script', 'cw', './widget.js'));
-        cw('widget', { url: '<YOUR_APIGATEWAY_URL>',
-                       api_key: '<YOUR_API_KEY>', 
+        cw('widget', { url: 'https://s6gw9k12gj.execute-api.ap-northeast-2.amazonaws.com/LATEST/graph',
+                       api_key: 'sWIQq3nCGY1J7AlIsI3oi4Q59OvJRm5dikg1nQMh', 
                        widget : list
                      });
     </script>
 </body>
 </html>
+
